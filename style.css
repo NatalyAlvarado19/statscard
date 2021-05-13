@@ -1,0 +1,159 @@
+.attribution { 
+    	font-size: 11px; 
+    	text-align: center; 
+ }
+    
+.attribution a { 
+    	color: hsl(228, 45%, 44%); 
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: auto;
+	background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+	justify-content: center;
+	align-content: center;
+	display: grid;
+	grid-template: 
+	"T I ";
+	margin: 90px;
+	height: auto;
+}
+
+.imagen{
+	background-color:  hsl(277, 64%, 61%);
+	display: inline-block;
+	border-radius: 0px 10px 10px 0px;
+}
+
+h1 {
+	color: hsl(0, 0%, 100%);
+	font-family: 'Lexend Deca';
+	font-weight: 400;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+p {
+	color: hsla(0, 0%, 100%, 0.75);
+	font-family: 'Inter';
+	font-weight: 400, 700;
+	text-align: left;
+	width: 100%;
+}
+
+span {
+	color: hsl(277, 64%, 61%);
+}
+
+img {
+	display: grid;
+	width: auto;
+	grid-area: I;
+	opacity: 50%;
+	border-radius: 0px 10px 10px 0px;
+}
+
+h2 {
+	text-transform: uppercase;
+	color: hsla(0, 0%, 100%, 0.75);
+	font-family: 'Inter';
+	font-size: 0.7rem;
+}
+
+.texto {
+	background-color: hsl(244, 38%, 16%);
+	border-radius: 10px 0px 0px 10px;
+	grid-area: T;
+	width: : 40%;
+	padding: 2rem;
+	grid-template: 
+	"num1   num2  num3" 
+	"comp  temp  quer" auto;
+	text-align: center;
+}
+
+
+.numero1 {
+	grid-area: num1;
+}
+
+.numero2 {
+	grid-area: num2;
+}
+
+.numero3 {
+	grid-area: num3;
+}
+
+.companies {
+	grid-area: comp;
+}
+
+.templates {
+	grid-area: temp;
+}
+
+.queries {
+	grid-area: quer;
+}
+
+@media (max-width: 375px) {
+	.container {
+		display: grid;
+		grid-template:
+		"I"
+		"T";
+		grid-template-columns: 90%
+		height: auto;
+		margin-top: 5rem;
+	}
+	.texto {
+		justify-content: center;
+		text-align: center;
+		grid-template-columns: 90%;
+		border-radius: 0px 0px 10px 10px;
+	}
+
+	img {
+		border-radius: 10px 10px 0px 0px;
+	}
+	.imagen{
+	background-color:  hsl(277, 64%, 61%);
+	display: grid;
+	border-radius: 10px 10px 0px 0px;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: hsl(233, 47%, 7%);
+}
+
+p {
+	color: hsla(0, 0%, 100%, 0.75);
+	text-align: center;
+	font-family: 'Inter';
+	font-size: 1rem;
+	margin: 0px;
+	text-align: center;
+	width: 100%;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+h1 {
+	color: hsl(0, 0%, 100%);
+	font-family: 'Lexend Deca';
+	font-size: 1.5rem;
+	text-align: center;
+	justify-content: left;
+	margin: 0px;
+}
+}
